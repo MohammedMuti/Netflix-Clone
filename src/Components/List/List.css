@@ -1,0 +1,51 @@
+.list {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.list .listTitle {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 5%;
+}
+
+.list .swiper-main-container {
+  padding-left: 5%;
+}
+
+.list .swiper-main-container .swiper,
+.list .swiper-main-container .swiper-container {
+  overflow: visible;
+}
+
+.list .swiper-button-prev,
+.list .swiper-button-next {
+  color: white;
+  background-color: rgba(22, 22, 22, 0.5);
+  height: 120px;
+  top: 20px;
+  padding: 0 1.5rem;
+}
+
+.list .swiper-button-prev {
+  left: -5%;
+}
+
+.list .swiper-button-next {
+  right: 0;
+}
+
+.list .swiper-wrapper .swiper-slide,
+.list .swiper-wrapper .swiper-backface-hidden {
+  visibility: visible;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.list .swiper-wrapper .swiper-slide:hover,
+.list .swiper-wrapper .swiper-backface-hidden:hover {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+/*# sourceMappingURL=List.css.map */

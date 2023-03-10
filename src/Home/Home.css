@@ -1,0 +1,19 @@
+.home {
+  background: #0b0b0b;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+@media (max-width: 1050px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 80%;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

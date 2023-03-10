@@ -1,0 +1,101 @@
+.navbar {
+  color: white;
+  font-size: 1.4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(50%, rgba(0, 0, 0, 0.236)));
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.236) 50%);
+}
+
+.navbar.scrolled {
+  background: #0b0b0b;
+}
+
+.navbar .container {
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5rem;
+}
+
+.navbar .container .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .container .left img {
+  width: 6rem;
+  margin-right: 1.3rem;
+}
+
+.navbar .container .left span {
+  margin-left: 1.4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .navbar .container .left span {
+    display: none;
+  }
+}
+
+.navbar .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .container .right span {
+  margin-right: 1.2rem;
+}
+
+.navbar .container .right img {
+  width: 2rem;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.navbar .container .right .navbar-icon {
+  margin-right: 1.2rem;
+}
+
+.navbar .container .right .nav-profile .options {
+  display: none;
+  background-color: #0b0b0b;
+  border-radius: 5px;
+}
+
+.navbar .container .right .nav-profile .options span {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.navbar .container .right .nav-profile:hover .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+/*# sourceMappingURL=Navbar.css.map */

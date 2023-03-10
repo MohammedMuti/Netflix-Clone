@@ -1,0 +1,72 @@
+@import "../../Variables/Variable.scss";
+
+.navbar {
+  color: white;
+  font-size: 1.4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.236) 50%);
+
+  &.scrolled {
+    background: $main-color;
+  }
+
+  .container {
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    .left {
+      display: flex;
+      align-items: center;
+      img {
+        width: 6rem;
+        margin-right: 1.3rem;
+      }
+      span {
+        margin-left: 1.4rem;
+        cursor: pointer;
+        @media (max-width: 1000px) {
+          display: none;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 1.2rem;
+      }
+      img {
+        width: 2rem;
+        border-radius: 5px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      .navbar-icon {
+        margin-right: 1.2rem;
+      }
+      .nav-profile {
+        .options {
+          display: none;
+          background-color: $main-color;
+          border-radius: 5px;
+          span {
+            padding: 1rem;
+            cursor: pointer;
+          }
+        }
+        &:hover {
+          .options {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}

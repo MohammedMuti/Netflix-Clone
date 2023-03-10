@@ -1,0 +1,81 @@
+@import "../../Variables/Variable.scss";
+
+.list {
+  width: 100%;
+  margin-top: 1rem;
+
+  .listTitle {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 5%;
+  }
+
+  .swiper-main-container {
+    padding-left: 5%;
+    .swiper,
+    .swiper-container {
+      overflow: visible;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: white;
+    background-color: rgba(22, 22, 22, 0.5);
+    height: 120px;
+    top: 20px;
+    padding: 0 1.5rem;
+  }
+
+  .swiper-button-prev {
+    left: -5%;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-wrapper {
+    .swiper-slide,
+    .swiper-backface-hidden {
+      visibility: visible;
+      transform: none;
+      &:hover {
+        transform: translateZ(0);
+      }
+    }
+  }
+
+  //   .list-wrapper {
+  //     position: relative;
+  //     .slideArrow {
+  //       width: 5%;
+  //       height: 100%;
+  //       background-color: rgba(22, 22, 22, 0.5);
+  //       color: white;
+  //       position: absolute;
+  //       z-index: 10;
+  //       top: 0;
+  //       bottom: 0;
+  //       margin: auto;
+  //       cursor: pointer;
+
+  //       &.left {
+  //         left: 0;
+  //       }
+
+  //       &.right {
+  //         right: 0;
+  //       }
+  //     }
+  //     .list-container {
+  //       margin-left: 5%;
+  //       display: flex;
+  //       width: max-content;
+  //       margin-top: 10px;
+  //       transform: translateX(0px);
+  //       transition: all 1s ease;
+  //     }
+  //   }
+}

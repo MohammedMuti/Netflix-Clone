@@ -1,0 +1,23 @@
+@import "../Variables/Variable.scss";
+
+.home {
+  background: $main-color;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  // font-size: 62.5%;
+}
+
+@media (max-width: 1050px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+// npm install @mui/material @emotion/react @emotion/styled
